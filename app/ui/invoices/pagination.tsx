@@ -1,9 +1,8 @@
 'use client';
 
-import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+// import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Link from 'next/link';
-import { generatePagination } from '@/app/lib/utils';
 
 export default function Pagination({ totalPages }: { totalPages: number }) {
   // NOTE: comment in this code when you get to this point in the course
@@ -102,18 +101,18 @@ function PaginationArrow({
     },
   );
 
-  const icon =
-    direction === 'left' ? (
-      <ArrowLeftIcon className="w-4" />
-    ) : (
-      <ArrowRightIcon className="w-4" />
-    );
+  // const icon =
+  //   direction === 'left' ? (
+  //     <ArrowLeftIcon className="w-4" />
+  //   ) : (
+  //     <ArrowRightIcon className="w-4" />
+  //   );
 
   return isDisabled ? (
-    <div className={className}>{icon}</div>
+    <div className={className}>{/* {icon} */}</div>
   ) : (
     <Link className={className} href={href}>
-      {icon}
+      {/* {icon} */}
     </Link>
   );
 }
